@@ -1,5 +1,5 @@
 {
-    "baseUrl" : "https://next.privat24.ua",
+    "baseUrl" : "https://pre.beeble.com/",
     "ignoreTestFiles" : "**/examples/*",
     "defaultCommandTimeout": 21000
 }
