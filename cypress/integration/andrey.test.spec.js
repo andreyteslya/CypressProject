@@ -20,10 +20,18 @@
  //   cy.contains('чоловік')
 //});
 
-it("By Compose", ()=>{
-    cy.visit('https://pre.beeble.com/')
+it.only("By Compose", ()=>{
+    cy.visit('/')
     cy.get('[name="secure-username"]').type('test_qa@beeble.com')
     cy.get('#signin_pass').type('Qwertyasdf123!')
     cy.get('#sigin_button').click()
     cy.get('#headerActionsCompose').click()
 })
+
+it("By Compose", ()=>{
+  cy.visit('/')
+  cy.get('[name="secure-username"]').type('test_qa@beeble.com')
+  cy.get('#signin_pass').type('Qwertyasdf123!')
+  cy.get('#sigin_button').click()
+  cy.get('[class="nav-link flex-grow-1"][data-nst-folder-path="Sent"]').click()
+  })
